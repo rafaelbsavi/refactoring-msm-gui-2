@@ -32,4 +32,8 @@ class Actor < ApplicationRecord
 
     return the_many
   end
+
+
+  has_many(:characters, class_name: "Character", foreign_key: "actor_id")
+
 end

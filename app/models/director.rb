@@ -20,4 +20,7 @@ class Director < ApplicationRecord
 
     return the_many
   end
+
+
+  has_many(:filmography, :class_name: "Movie", foreign_key: "director_id")
 end
